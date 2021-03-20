@@ -1,0 +1,42 @@
+.features {
+  @extend %list;
+  display: flex;
+}
+
+.features__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $primary-text-color;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__descr {
+  margin: 0;
+  color: $description-color;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.features__icon {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.features__iteam {
+  width: 270px;
+  height: 251px;
+
+  & + & {
+    margin-left: 30px;
+  }
+}

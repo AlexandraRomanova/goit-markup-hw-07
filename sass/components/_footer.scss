@@ -1,0 +1,110 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contacts {
+  @extend .container;
+  display: flex;
+  align-items: baseline;
+}
+
+.inform {
+  margin-right: 70px;
+}
+
+.logo-secondary {
+  @extend .logo;
+  display: inline-block;
+  padding: 0;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.address {
+  @extend %list;
+
+  &__iteam + &__iteam {
+    margin-top: 9px;
+  }
+}
+
+.address-link {
+  @extend %link;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  transition: color 250ms $timing;
+
+  &:hover,
+  &:focus,
+  &--place {
+    color: $white-color;
+  }
+}
+
+.join__title,
+.sign__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.sign__title {
+  display: block;
+}
+
+.join--link {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-link__icon {
+  fill: $white-color;
+  transition: background-color 250ms $timing;
+}
+
+.sign {
+  width: 573px;
+  margin-left: 93px;
+}
+
+.sign__label {
+  display: inline-block;
+  width: 360px;
+  margin-right: 6px;
+}
+
+.sign__input {
+  padding: 15px 16px;
+  width: 100%;
+  height: 50px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.sign__icon {
+  margin-left: 12px;
+}
